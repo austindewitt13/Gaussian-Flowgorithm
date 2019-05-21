@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="trabu"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-21 09:22:35 AM"/>
+        <attribute name="saved" value="2019-05-21 09:48:38 AM"/>
         <attribute name="created" value="dHJhYnU7TEFQVE9QLU44NzI2U0QyOzIwMTktMDUtMjE7MDg6MTQ6MTEgQU07MjgwOQ=="/>
-        <attribute name="edited" value="dHJhYnU7TEFQVE9QLU44NzI2U0QyOzIwMTktMDUtMjE7MDk6MjI6MzUgQU07MjsyOTI0"/>
+        <attribute name="edited" value="dHJhYnU7TEFQVE9QLU44NzI2U0QyOzIwMTktMDUtMjE7MDk6NDg6MzggQU07MzsyOTM2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,7 +27,7 @@
             <assign variable="sum" expression="0"/>
             <declare name="i" type="Integer" array="False" size=""/>
             <for variable="i" start="1" end="upperLimit" direction="inc" step="1">
-                <assign variable="sum" expression="sum+i"/>
+                <assign variable="sum" expression="upperLimit * (upperLimit + 2) / 2"/>
             </for>
             <output expression="sum" newline="True"/>
         </body>
