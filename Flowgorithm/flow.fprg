@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="trabu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-21 09:22:35 AM"/>
+        <attribute name="created" value="dHJhYnU7TEFQVE9QLU44NzI2U0QyOzIwMTktMDUtMjE7MDg6MTQ6MTEgQU07MjgwOQ=="/>
+        <attribute name="edited" value="dHJhYnU7TEFQVE9QLU44NzI2U0QyOzIwMTktMDUtMjE7MDk6MjI6MzUgQU07MjsyOTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="upperLimit" type="Integer" array="False" size=""/>
+            <assign variable="upperLimit" expression="-1"/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <while expression="upperLimit &lt; 1|| upperLimit &gt; 10000000">
+                <output expression="&quot;input a value between 1 and 1000000&quot;" newline="True"/>
+                <input variable="upperLimit"/>
+                <if expression="upperLimit &gt; 1">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Not a correct value, please try again.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="upperLimit" direction="inc" step="1">
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
